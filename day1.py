@@ -1,7 +1,7 @@
 left = []
 right = []
 
-with open('input', 'r') as file:
+with open('input1', 'r') as file:
     for line in file:
         result = line.split('   ')
         left.append(int(result[0]))
@@ -24,6 +24,6 @@ for i in range(len(left)):
     for j in range(len(right)):
         if(left[i] == right[j]):
             appeared += 1
-    simscore += (appeared * left[i])
+    simscore += (appeared * left[i])    
 
 print(f'Similarity score: {simscore}')
